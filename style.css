@@ -10,3 +10,18 @@ article{
     margin: 0 auto;
     width: 70vw;
 }
+
+.upper-slider{
+    width: 100%;
+    background-color: black;
+}
+
+.slider-img{
+    align-items: center;
+    display: block;
+    transition: 0.5s transform;
+    margin: 0 auto;
+}
+.slider-img:hover{
+    transform: scale(1.10);
+}
