@@ -53,4 +53,26 @@ h1{
 
 .geschiedenis{
     background: white;
+    border-radius: 10px;
+    margin-bottom: 50px;
+
+}
+
+.review-section{
+    background-color: #d4d4d4;
+}
+.review{
+    background: white;
+    border-radius: 10px;
+    margin-bottom: 50px;
+    width: 400px;
+    height: 300px;
+    margin-left: 5%;
+    display: inline-block;
+}
+.review > p{
+    padding: 20px;
+}
+footer{
+    background-color: blue;
 }
