@@ -11,14 +11,17 @@ body{
 
 header{
     background-color: blue;
-}
-
-header{
     height: 50px;
-}
+} 
+
+   
 
 h1{
     font-size: 200%;
+    display: flex;
+    justify-content: center;
+}
+h2{
     display: flex;
     justify-content: center;
 }
@@ -60,15 +63,28 @@ h1{
 
 .review-section{
     background-color: #d4d4d4;
+    width: 100%;
 }
-.review{
-    background: white;
-    border-radius: 10px;
-    margin-bottom: 50px;
+.review-section > .review{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.review-section > .review > .review-jan{
     width: 400px;
     height: 300px;
-    margin-left: 5%;
-    display: inline-block;
+    background: white;
+    border-radius: 10px;
+    margin-bottom: 50px;  
+}
+.review-section > .review > .review-marinus{
+    width: 400px;
+    height: 300px;
+
+    background: white;
+    border-radius: 10px;
+    margin-bottom: 50px;  
 }
 .review > p{
     padding: 20px;
