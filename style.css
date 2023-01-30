@@ -14,24 +14,29 @@ header{
     height: 50px;
 } 
 
-.hidden{
-    transform: scaleY(0);
-    
+nav{
+    display: flex;
+    justify-content: center;
 }
 
-ul{
-    background-color: gray;
+li{
+    display: flex;
+    justify-content: center;
+}
+
+.hidden{
+    transform: scaleY(0); 
 }
 
 h3:hover + li > .hidden{
     transform: scaleY(1);
-    transition: 1s;
+    transition: 0.5s;
     transform-origin: top;
 }
 
 a{
     text-decoration: none;
-    color: white;
+    color: white;    
 }
 
 h1{
@@ -47,17 +52,34 @@ h2{
 .upper-slider{
     width: 100%;
     background-color: black;
+} 
+
+.upper-slider > .slider-img{
+    display: inline-flex;
     
+}
+
+.slide-button-right{
+    position: fixed;
+    height: 20px;
+    width: 20px;
+}
+
+.slide-button-left{
+    position: fixed;
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    height: 20px;
+    width: 20px;
 }
 
 .slider-img{
-    align-items: center;
-    display: block;
+
     transition: 0.5s transform;
     margin: 0 auto;
-    
-
-}
+    width: 30vw;
+    height: 300px;
+}  
 
 .slider-img:hover{
     transform: scale(1.10);
