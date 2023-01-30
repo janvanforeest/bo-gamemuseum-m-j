@@ -90,8 +90,19 @@ function update() {
     for (let i = 0; i < snakebody.length; i++) {
         context.fillRect(snakebody[i][0], snakebody[i][1], blocksize, blocksize);
     }
-    if (snakeX > cols*blocksize)
+    if (snakeX < 0 || snakeX > cols*blocksize || snakeY < 0 || snakeY > rows*blocksize){
+        gameover = true;
+        alert("game over")
+    }
 
+    for (let i = 0; i < snakeBody.length; i++) {
+        if (snakeX == snakeBody[i][0] && snakeY == snakeBody[i][1]) {
+            gameOver = true;
+            alert("Game Over");
+        }
+    }
+
+     
 }
 
 function placeFood() {
@@ -100,3 +111,5 @@ function placeFood() {
 
 
 }
+
+
