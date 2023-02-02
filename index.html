@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>game museum</title>
+    <script src="game.js"></script>
 </head>
 <body>
     <header>
@@ -13,21 +14,21 @@
             <ul>
                 <h3>taal</h3>
                 <li> 
-                    <a class="hidden" href="">engels</a>
+                    <a class="hidden" href="engels.html">engels</a>
                 </li>
                 <li>
-                    <a class="hidden" href="">nederlands</a>
+                    <a class="hidden" href="index.html">nederlands</a>
                 </li>
             </ul>
         </nav>
     </header>
     <main>
         <section class="upper-slider">
-            <button class="slide-button-right"><img src="img/right-white-arrow-icon-png.png" alt=""></button>
-            <img src="img/c45d048c2b2af3fc91704d005422dfb8.jpg" alt="" class="slider-img">
-            <img src="img/gamemuseumslider1.jpg" alt="" class="slider-img">
-            <img src="img/c870x524.jpg" alt="" class="slider-img">
-            <button class="slide-button-left"><img src="img/right-white-arrow-icon-png.png" alt=""></button>
+            <button class="slide-button-right" id="sliderButton"><img src="img/right-white-arrow-icon-png.png" alt="" width="160px" height="300px"></button>
+            <img src="img/c45d048c2b2af3fc91704d005422dfb8.jpg" alt="" class="slider-img" onclick="">
+            <img src="img/gamemuseumslider1.jpg" alt="" class="slider-img" onclick="">
+            <img src="img/c870x524.jpg" alt="" class="slider-img" onclick="">
+            <button class="slide-button-left" id="sliderButton"><img src="img/right-white-arrow-icon-png.png" alt="" width="160px" height="300px"></button>
         </section>
         <section class="content-section">
             <article class="activiteiten">
@@ -35,9 +36,10 @@
                 <section>
                     <h1>activiteiten</h1>                
                     <p>
-                        praat praat praat
-                        praat praat klets praat praat klets klets klet klets praat klets praat
-                        praat klets praat klets klets klets praat klets  klets
+                        in de nationaal videogame museum zoetermeer kun je een kans krijgen om rond te lopen door een recente gechiedenis
+                        van een periode van de eerste generatie games waar je ook een gevoel krijgt dat je door een game hal loopt.
+                        je krijgt te weten hoe de games gemaakt zijn en hoe de arcade tijdlijn in elkaar zit er zijn ellarlij bekende games te spelen
+                        die jij ook mischien kent en je vader enthousiast je introduceert naar zijn favorieten van 231 verschillende keuzes
                     </p>
                 </section>
             </article>
@@ -46,14 +48,17 @@
                 <section>
                     <h1>geschiedenis</h1>
                     <p>
-                        vroeger oud oud vroeger verleden toen oud vroeger vroeger oud oud toen vroeger
-                        verleden oud verleden toen toen oud vroeger veleden oud verleden oud oud toen vroeger
-                        toen toe toen oud verleden vroeger verleden verleden oud toen toen toen verleden vroeger vroeger
+                        de arcade museum is in 2008 opgericht door hasan tasdemir en pascal rappailles later werd snel te klein en ze naar een andere plek verplaatsen
+                        in een loods maar omdat het in de winter niet goed werd opgewarmt moest alles worden gebracht naar het leegstaand ministerie van landbouw  
+                        maar wanneer ook die plaats moest leeg geruimd worden bleven ze tijdelijk in een showroom van klassieke autos maar omdat daar geen plaats was 
+                        om hun arcade kasten te renoveren moesten ze daarna nog een laatste zoeken voor een permanente plaats 
+                        in 2011 werd er een locatie gevonden in cobaltstraat zoetermeer waar tegenwoordig nu staat 
                     </p>
-                </section>    
+                </section>  
             </article>
-            <article class="game-article">
-
+            <article class="game-article">                
+                    <h1>snake</h1>                
+                <canvas id="board"></canvas>
             </article>
         </section>
         <section class="review-section">
@@ -72,9 +77,9 @@
         </section>
     </main>  
     <footer>
-        <p>locatie</p>
-        <p>theaterplein 11 2711 ek zoetermeer</p>
-        <p>079 360 2718</p>
+        <p>locatie <span class="span1"></span> openingstijden</p> 
+        <p>theaterplein 11 2711 ek zoetermeer <span class="span2"></span>maandag-dinsdag dicht woensdag-donderdag 10:00-18:00</p>
+        <p>079 360 2718 <span class="span3"></span>vrijdag 10:00-21:00 zaterdag 10:00-18:00 zondag 12:00-18:00</p>
     </footer> 
 </body>
 </html>
