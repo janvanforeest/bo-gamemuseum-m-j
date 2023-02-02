@@ -40,9 +40,10 @@ li:hover > .hidden{
 a{
     text-decoration: none;
     color: white;    
-    width: 50px;
+    width: 100px;
     background-color: #848484;
     position: absolute;
+
 }
 
 h1{
